@@ -9,8 +9,8 @@ import java.lang.annotation.Target;
  * @author gongxuanzhangmelt@gmail.com
  **/
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface Table {
+@Target(ElementType.PARAMETER)
+public @interface Param {
     
-    String tableName();
+    String value();
 }
